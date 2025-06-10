@@ -9,7 +9,7 @@ with st.sidebar:
         youtube_url = st.sidebar.text_area(
             label="Input YouTube URL:",
             max_chars=50
-            )  # "https://www.youtube.com/watch?v=5MgBikgcWnY"
+            )  # "https://www.youtube.com/watch?v=5MgBikgcWnY&cc_load_policy=1&hl=es"
         query = st.sidebar.text_area(
             label="Input query:",
             max_chars=50,
@@ -21,8 +21,8 @@ with st.sidebar:
             max_chars=50,
             type="password"
             )
-        "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-        "[View the source code](https://github.com/rishabkumar7/pets-name-langchain/tree/main)"
+        "[Get an OpenAI API key](https://aistudio.google.com/app/apikey)"
+        "[View the source code](https://github.com/AndrianovAL/LangChain_RAG_YouTube/tree/main)"
         submit_button = st.form_submit_button(label='Submit')
 
 if youtube_url and query:
