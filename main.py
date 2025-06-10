@@ -14,7 +14,7 @@ with st.sidebar:
             label="Input query:",
             max_chars=50,
             key="query"
-            )  # query = "What is the main idea of this video?"
+            )  # "What is the main idea of this video?"
         gemini_api_key = st.sidebar.text_input(
             label="Input Google Gemini API key:",
             key="langchain_search_api_key_openai",
